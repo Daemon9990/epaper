@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: newspaper-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    schedule: "30 2 * * *"

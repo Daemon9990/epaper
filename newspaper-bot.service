@@ -1,0 +1,14 @@
+[Unit]
+Description=Daily Telegram Newspaper Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=YOUR_VPS_USER
+WorkingDirectory=/opt/newspaper-telegram-bot
+ExecStart=/opt/newspaper-telegram-bot/.venv/bin/python /opt/newspaper-telegram-bot/main.py
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

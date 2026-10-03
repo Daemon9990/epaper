@@ -1,0 +1,4 @@
+requests
+pypdf
+rich
+python-dotenv

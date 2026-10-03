@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Telegram Newspaper Bot every day at 08:00 IST
+
+[Timer]
+OnCalendar=*-*-* 08:00:00 Asia/Kolkata
+Persistent=true
+Unit=newspaper-bot.service
+
+[Install]
+WantedBy=timers.target

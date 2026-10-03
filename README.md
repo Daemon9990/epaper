@@ -1,4 +1,5 @@
-# Daily Telegram Newspaper Bot
+cd /opt/epaper
+sed -n '1,240p' main.py# Daily Telegram Newspaper Bot
 
 Uses the existing Epaper.py downloader to download today's Namaste Telangana
 newspaper and post the PDF to a Telegram channel every day at 08:00 IST.
